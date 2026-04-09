@@ -58,7 +58,7 @@ jobs:
     - name: Download wheel
       uses: actions/download-artifact@v4
         python -m pip install --upgrade pip
-        pip install wheel pyomo pandas numpy scipy
+        pip install wheel pyomo pandas<3.0 numpy>2.0 scipy
         pip install --no-index --pre --find-links=. chama
     - name: Import chama
       run: |
