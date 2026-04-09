@@ -1,7 +1,7 @@
 # Required
 pyomo
 pandas
-numpy
+numpy>2.0
 scipy
 setuptools
 
