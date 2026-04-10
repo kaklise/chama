@@ -32,7 +32,7 @@ jobs:
         python setup.py bdist_wheel
         ls dist/*
     - name: Save wheel
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: chama_${{ matrix.python-version }}_${{ matrix.os }}.whl
         path: dist/chama*
